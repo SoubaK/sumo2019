@@ -1,0 +1,22 @@
+<<<<<<< HEAD
+Les n1as sont trop styles !
+=======
+Holaa :)
+<<<<<<< HEAD
+
+
+Conflittttttssss !!!!!
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
+<<<<<<< HEAD
+
+testtestes
+
+
+=======
+hola
+>>>>>>> origin/master
+Hallo
+
+Kallimera
