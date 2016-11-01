@@ -33,10 +33,10 @@ int Rampe(int pente, int maxi){
   int i=0;
   while(i<= maxi)
   {
-    i++;
+    i = i + pente/40;
     analogWrite(MotorSpeed,i);
 
-    delay(int(1/pente))
+    delay(int(50))
   }
   
 
