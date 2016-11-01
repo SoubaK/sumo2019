@@ -29,14 +29,14 @@ analogWrite(MotorSpeed,100);
 }
 
 int Rampe(int pente, int maxi){
-  
+    //pente : pourcentage par seconde
   int i=0;
+  int tx_raffraichissement = 50; ( 
   while(i<= maxi)
   {
-    i = i + pente/40;
+    i = i + pente*1000/tx_raffraichissement;
     analogWrite(MotorSpeed,i);
-
-    delay(int(50))
+    delay(int(tx_raffraichissement))
   }
   
 
