@@ -16,7 +16,7 @@ void setup() {
   M_L.init();
   M_R.init();
 
-  attachInterrupt(2, coderL, CHANGE);   //quand PinToInterrupt(...)(=2) change ("CHANGE") alors coderL s'execute (Interruption)
+  attachInterrupt(2, coderL, CHANGE);   //quand digitalPinToInterrupt(...)(=2) change ("CHANGE") alors coderL s'execute (Interruption)
   attachInterrupt(0, coderR, CHANGE);
   Serial.begin(115200);
   timerDebug.setInterval(50, serialDebug);
