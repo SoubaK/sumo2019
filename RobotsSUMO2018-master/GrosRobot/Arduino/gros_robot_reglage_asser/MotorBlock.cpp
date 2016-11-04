@@ -34,6 +34,7 @@ void MotorBlock::run(double targetSpeed)
   
   // Saturation
   cmd = constrain(cmd, -255, 255);   //Manière compliquée de ramener les entiers relatifs sur [-255;255]
+                                  //Si cmd > 255 alors cmd = 255, si cmd < -255 alors cmd = -255
   
   cmdDEBUG = cmd;
   
