@@ -3,12 +3,12 @@
 #include "MotorBlock.h"
 #include "interrupts.h"
 
-SimpleTimer timerDebug;
-SimpleTimer timerAsser;
+SimpleTimer timerDebug;           // objet timerDebug de classe SimpleTimer
+SimpleTimer timerAsser;           // objet timerAsser de classe SimpleTimer
 
 
-MotorBlock M_L(12,9,3, 21, 7);
-MotorBlock M_R(13,8,11, 2, 4);
+MotorBlock M_L(12,9,3, 21, 7);    // objet M_L de classe MotorBlock
+MotorBlock M_R(13,8,11, 2, 4);    // objet M_G de classe MotorBlock
 
 float tRef;
 
