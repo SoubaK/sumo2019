@@ -1,6 +1,9 @@
-void setup() {
-  // put your setup code here, to run once:
+#include "BaseRoulante.hpp"
 
+import Serial
+
+void setup() {
+  
 }
 
 void loop() {

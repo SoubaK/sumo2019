@@ -3,7 +3,7 @@ class BaseRoulante {
     BaseRoulante (float largeur, float diamRoue, int nbrStep, float freqStep, int pinStepGauche, int pinDirGauche, int pinSleepGauche, int pinStepDroite, int pinDirDroite, int pinSleepDroite);
     ligneDroite(bool dir, float distance); //distance en centimetre
     rotation(bool trigo, float degres); //trigo = 1 si rotation dans sens trigo
-    sleep(); //eteind la base roulante
+    sleep(); //eteint la base roulante
     wake(); //reveille la base roulante
 
   private:
