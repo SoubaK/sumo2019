@@ -8,7 +8,7 @@ SimpleTimer timerAsser;           // objet timerAsser de classe SimpleTimer
 
 
 MotorBlock M_L(12,9,3, 21, 7);    // objet M_L de classe MotorBlock
-MotorBlock M_R(13,8,11, 2, 4);    // objet M_G de classe MotorBlock
+MotorBlock M_R(13,8,11, 2, 4);    // objet M_R de classe MotorBlock
 
 float tRef;
 
