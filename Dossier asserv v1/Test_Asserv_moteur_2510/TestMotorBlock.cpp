@@ -28,7 +28,7 @@ void MotorBlock::addtoKv(delta){
     Kv += delta;
 }
 
-void MotorBlock::run(){                 /// pour chaque moteur, cette fonction se fait toutes les 20 ms
+void MotorBlock::run(){                 /// pour chaque moteur, cette fonction se fait tous les cycles de timer (ici 20 ms)
     currSpeed = nbTopsDone * 0,3330/(50);           /// Une valeur est le passage de degres a radians (?) et l'autre le nombre de crans du codeur
     nbTopsDone = 0;
 
