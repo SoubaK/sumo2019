@@ -36,7 +36,7 @@ void MotorBlock::run(){
 
     /// A quoi sert cet offset ?
     //Offset
-    cmd += ((cmd > 0)- (cmd < 0)) * constrain(OFFSET*Kv,50,90);
+    cmd += ((cmd > 0)- (cmd < 0)) * constrain(OFFSET*Kv,50,90);     /// les booleens sont traduits automatiquement en int par la soustraction
 
     //Saturation
     cmd = constrain(cmd,-255,255);
