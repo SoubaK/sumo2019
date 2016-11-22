@@ -49,7 +49,7 @@ void setup() {
   attachInterrupt(0, coderR, CHANGE);
   Serial.begin(115200);
   //timerDebug.setInterval(100, serialDebug);
-  timerAsser.setInterval(20, asser);
+  timerAsser.setInterval(20, asser);		/// fait l'asservissement tous les 20ms
   
 
   /// What the hell is this ?
