@@ -34,7 +34,7 @@ void MotorBlock::run(){
 
     float cmd = (targetSpeed - currSpeed)*K;
 
-    /// A quoi sert cet offset ?
+    /// A quoi sert cet offset ?  ----------------> fait partie des trucs a changer/ameliorer cette annee
     //Offset
     cmd += ((cmd > 0)- (cmd < 0)) * constrain(OFFSET*Kv,50,90);     /// les booleens sont traduits automatiquement en int par la soustraction
 
