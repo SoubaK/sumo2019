@@ -14,12 +14,12 @@ void MotorBlock setTargetSpeed(requiredTargetSpeed){
     targetSpeed = requiredTargetSpeed;
 }
 
-///----------> comprendre à quoi sert cette constante
+///"cette constante se regle a l'arrache" dixit SoubaK et Mascart
 void Motorblock::setK(requiredK)){
     K = requiredK;
 }
 
-/// ----------> comprendre à quoi sert cette constante
+/// ----------> comprendre Ã  quoi sert cette constante
 void MotorBlock::setKv(requiredKv) {
     Kv = requiredKv;
 }
