@@ -1,5 +1,5 @@
-#include "MotorBlock.h"
-#include "command.h"
+#include "TestMotorBlock.h"
+#include "Testcommand.h"
 
 extern MotorBlock M_L;
 extern MotorBlock M_R;
@@ -48,7 +48,7 @@ boolean rotCommand() {
         lastTimeKv = currTime;
 
       }
-        /// Commande en trapèze FTW (plateau + descente)
+        /// Commande en trapÃ¨ze FTW (plateau + descente)
       float vit = max(rotTarget - dst, 0.0) * (5.0 / 4.0) * 0.22 / rotTarget + 0.05;  /// ----------->des valeurs qui sortent de nulle part.....
       M_L.setSpeed(vit * rotDir - d_rot/2500.0);  /// ----------->des valeurs qui sortent de nulle part.....
       M_R.setSpeed(vit * rotDir + d_rot/2500.0);  /// ----------->des valeurs qui sortent de nulle part.....
@@ -121,7 +121,7 @@ boolean linCommand() {
         lastTimeKv = currTime;
       }
 
-        /// Commande en trapèze FTW (plateau puis descente)
+        /// Commande en trapÃ¨ze FTW (plateau puis descente)
       float vit = max(linTarget - dst, 0.0) * (5.0 / 1.0) * 0.36 / linTarget + 0.1; /// ---------> des valeurs qui sortent de nulle part
 
       float diffK = 250;   ///-----------> des valeurs qui sortent de nulle part
