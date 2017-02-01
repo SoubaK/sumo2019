@@ -46,7 +46,7 @@ class Pathfinding():
                 else :
                     s += "x "
             # end for
-            print s
+            print(s)
         # end for
             
 
