@@ -59,8 +59,8 @@ class Trajectoire :
         (x, y) = point
         pouet.findPath(self.position[0],(x, y, 0))
 
-        print "path"
-        print pouet.path
+        print ("path")
+        print (pouet.path)
 
         wolo = self.wololo(pouet.path)
 
@@ -93,11 +93,13 @@ class Trajectoire :
 		
 		coordRepere = getCoord(self.position[0], self.position[1],13.5)
         if(capteurs[0] and capteurs[1]) :
-            
-        else if(capteurs[0]):
-		    coordRepere = getCoord(coordRepere, self.position[1]-(math.pi / 2),13.5)
-		else if(capteurs[1]):
-		    coordRepere = getCoord(coordRepere, self.position[1]+(math.pi / 2),13.5)
+            ()
+        else:
+            if(capteurs[0]):
+                coordRepere = getCoord(coordRepere, self.position[1]-(math.pi / 2),13.5)
+            else:
+                if(capteurs[1]):
+                    coordRepere = getCoord(coordRepere, self.position[1]+(math.pi / 2),13.5)
         coordRepere = getCoord(coordRepere, self.position[1],distance + 19)
         coordRepere = [int(coordRepere[0]),int(coordRepere[1])]
 		
@@ -107,9 +109,9 @@ class Trajectoire :
 #beachbotsForest.displayForest()
 
 traj = Trajectoire((70, 30), 0, True)
-print traj.estCeUnRobot(80, 0)
+print (traj.estCeUnRobot(80, 0))
 traj.poseUnRobot([20,0], 0)
 beachbotsForest.displayForest()
 pouet = traj.vaVoirLaBasSiJySuis((70, 270))
 
-print pouet
+print (pouet)
