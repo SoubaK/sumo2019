@@ -35,7 +35,7 @@ class PathManager :
             constructs thresholdMap from baseMap : 
             values between 0 and -threshold are obstacles (False), other values are free spaces (True)
         """
-        self.thresholdMap = [ [ (self.baseMap[x][y] > 0 or self.baseMap[x][y] < -threshold) for y in xrange(len(self.baseMap[x])) ] for x in xrange(len(self.baseMap)) ]
+        self.thresholdMap = [ [ (self.baseMap[x][y] > 0 or self.baseMap[x][y] < -threshold) for y in range(len(self.baseMap[x])) ] for x in range(len(self.baseMap)) ]
     
     def findPath(self, start, goal) :
         """ start : (float,float), goal : (float,float,float) or (float,float)
@@ -74,8 +74,8 @@ class PathManager :
             yMin = int(math.floor(min(pointA[1], pointB[1])))
             xMax = int(math.ceil(max(pointA[0], pointB[0])))
             yMax = int(math.ceil(max(pointA[1], pointB[1])))
-            for x in xrange(xMin, 1+xMax) :
-                for y in xrange(yMin, 1+yMax) :
+            for x in range(xMin, 1+xMax) :
+                for y in range(yMin, 1+yMax) :
                     if not self.thresholdMap[x][y] and util.height((x,y), pointA, pointB) < threshold :
                         return False
             return True
