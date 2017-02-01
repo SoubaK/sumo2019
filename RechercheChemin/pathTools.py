@@ -70,8 +70,8 @@ class Path :
         xMax = max(xA, xB)
         yMin = min(yA, yB)
         yMax = max(yA, yB)
-        for x in xrange(xMin, xMax+1) :
-            for y in xrange(yMin, yMax+1) :
+        for x in range(xMin, xMax+1) :
+            for y in range(yMin, yMax+1) :
                 if Path._distFromLine((x,y), nodeA, nodeB) > threshold :
                     pass
                 elif matrix[x][y] == 0 :
