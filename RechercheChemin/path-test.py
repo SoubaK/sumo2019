@@ -5,12 +5,7 @@ Created on Mon Oct 20 21:19:10 2014
 @author: antoinemarechal
 """
 
-import aStar
-import aStarOld
-import pathManager
-import timeit
 import objectives
-import random
 
 ""
 matrix = [
@@ -43,12 +38,12 @@ pm.add(objF3)
 pm.add(objM1)
 pm.add(objM2)
 
-print pm.position
+print(pm.position)
 while len(pm.list) > 0 :
     obj, point = pm.getNextPoint()
-    print point
+    print(point)
     if obj.isComplete :
-        print obj.script
+        print(obj.script)
     pm.position = point
 
 
