@@ -6,8 +6,6 @@ Created on Mon Nov 03 23:08:08 2014
 
 import random
 
-import math
-
 from carte import Map
 
 class Fireball(Map) :
