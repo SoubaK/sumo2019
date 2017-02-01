@@ -10,7 +10,6 @@ Created on Thu Dec 11 21:34:28 2014
 # 2) appeler la méthode aStar : renvoie True si un chemin est trouvé
 # 3) appeler la méthode buildPath : renvoie le chemin trouvé (chemin pas-par-pas)
 
-import math
 import heapq
 import util
 
@@ -39,10 +38,10 @@ class AStar :
         width = len(matrix[0])
         maximum = float('inf')
         self.blockMat = matrix
-        self.statusMat = [ [ 1 for y in xrange(width) ] for x in xrange(height) ]       # 1 = inexplored, 0 = in open set, -1 = in closed set
-        self.gScoreMat = [ [ maximum for y in xrange(width) ] for x in xrange(height) ]
-        self.fScoreMat = [ [ maximum for y in xrange(width) ] for x in xrange(height) ]
-        self.prevMat = [ [ None for y in xrange(width) ] for x in xrange(height) ]
+        self.statusMat = [ [ 1 for y in range(width) ] for x in range(height) ]       # 1 = inexplored, 0 = in open set, -1 = in closed set
+        self.gScoreMat = [ [ maximum for y in range(width) ] for x in range(height) ]
+        self.fScoreMat = [ [ maximum for y in range(width) ] for x in range(height) ]
+        self.prevMat = [ [ None for y in range(width) ] for x in range(height) ]
         self.openSet = []                                                               # used as a sorted queue
         
         # initialisation of the starting point(s)
