@@ -54,8 +54,8 @@ class AStar :
         self.fScore = {}
         self.cameFrom = {}
         
-        for x in xrange(0,len(self.matrix)-1) :
-            for y in xrange(0,len(self.matrix[x])-1) :
+        for x in range(0,len(self.matrix)-1) :
+            for y in range(0,len(self.matrix[x])-1) :
                 if self.matrix[x][y] != 0 :
                     self.matrix[x][y] = 1   # normalize the matrix : blocks are 0, everything else is 1
         self.gScore[self.start] = 0
@@ -183,8 +183,8 @@ class AStar :
         xMax = max(cellA[0], cellB[0])
         yMin = min(cellA[1], cellB[1])
         yMax = max(cellA[1], cellB[1])
-        for x in xrange(xMin, xMax+1) :
-            for y in xrange(yMin, yMax+1) :
+        for x in range(xMin, xMax+1) :
+            for y in range(yMin, yMax+1) :
                 if distFromLine((x,y), cellA, cellB) > threshold :
                     pass
                 elif self.matrix[x][y] == 0 :
