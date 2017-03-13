@@ -1,0 +1,6 @@
+cmake_minimum_required(2.8)
+
+project(Sumo)
+add_executables(${PROJECT_NAME} "main.cpp"
+				"baseRoulante.cpp"
+				"triangulation.cpp")
